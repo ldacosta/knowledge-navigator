@@ -1,10 +1,12 @@
 # This is the conda environment file for production dependencies - i.e. deps that 'are' needed for production
-name: platypus-core
+name: knowledge-navigator
 channels:
-  - mims-conda
+#  - mims-conda
   - conda-forge
   - defaults
 dependencies:
   - python=3.10.4
-  - igraph-mims=0.3.0
+#  - igraph-mims=0.3.0
   - structlog=21.5.0
+  - pip:
+      - jaal=0.1.3  # https://towardsdatascience.com/introducing-jaal-interacting-with-network-made-easy-124173bb4fa
